@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './App.css'
 import Counter from './components/Counter'
+import { puppyList } from './puppy-data/data'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
+const [puppies, setPuppies] = useState(puppyList)
+  console.log (puppies)
   return (
     <>
-      <Counter />
+   
     </>
   )
 }
