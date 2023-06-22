@@ -7,7 +7,14 @@ import { puppyList } from './puppy-data/data'
 function App() {
 
 const [puppies, setPuppies] = useState(puppyList)
-  console.log (puppies)
+{ 
+  puppies.map((puppy) => {
+    
+    console.log("puppyList: ", puppyList);
+    return <p>{puppy.name}</p>
+  })
+}
+
   return (
     <>
    
