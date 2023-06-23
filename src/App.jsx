@@ -7,6 +7,9 @@ function App() {
 
 const [puppies, setPuppies] = useState(puppyList);
 const [featPupId, setFeatPupId] = useState(null);
+// { 
+//   puppies.map((puppyList) => { 
+//     console.log("puppyList:", puppyList);
 
 //     function handleClick() {
    
@@ -27,10 +30,8 @@ const [featPupId, setFeatPupId] = useState(null);
     <>
    {puppies.map((puppy) => {
 
-    return 
-      <p>   
-        {puppy.name} {puppy.email}
-      </p> 
+return <p> {puppy.name} {puppy.email}
+</p>
 
    })} 
     </>
